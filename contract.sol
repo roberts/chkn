@@ -5,9 +5,11 @@
 /**
  *
  *
+   https://x.com/DrewRoberts
+
    Contract features:
-   3% buy tax in tokens burned
-   10% sell tax in ETH sent to marketing w/ some sent to founder & lead dev
+   3% buy tax in ETH sent to marketing, community & dev
+   3% sell tax in ETH sent to marketing, community & dev
  */
 
 // SPDX-License-Identifier: MIT
@@ -1164,7 +1166,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
  
-contract army is ERC20, Ownable {
+contract cowboy is ERC20, Ownable {
     using SafeMath for uint256;
  
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -1222,16 +1224,16 @@ contract army is ERC20, Ownable {
         address indexed oldWallet
     );
  
-    constructor() ERC20("Drew Roberts Army", "ARMY") {
+    constructor() ERC20("Crypto Cowboys", "COWBOY") {
         uniswapV2Router = IUniswapV2Router02(
             0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         );
         _approve(address(this), address(uniswapV2Router), type(uint256).max);
  
-        uint256 totalSupply = 100_000_000_000 ether;
+        uint256 totalSupply = 100_000_000 ether;
  
-        maxTransactionAmount = (totalSupply) / 200; // 500,000,000 tokens
-        maxWallet = (totalSupply) / 100;  //1% of total supply (1,000,000,000 tokens)
+        maxTransactionAmount = (totalSupply) / 100; // 1% of total supply (1,000,000 tokens)
+        maxWallet = (totalSupply) / 50;  // 2% of total supply (2,000,000 tokens)
         swapTokensAtAmount = (totalSupply * 5) / 10000;
  
         buyMarketingFee = 1;
@@ -1242,7 +1244,7 @@ contract army is ERC20, Ownable {
             buyDevelopmentFee +
             buyCommunityFundFee;
  
-        sellMarketingFee = 8;
+        sellMarketingFee = 1;
         sellDevelopmentFee = 1;
         sellCommunityFundFee = 1;
         sellTotalFees =
@@ -1297,7 +1299,7 @@ contract army is ERC20, Ownable {
         excludeFromMaxTransaction(address(uniswapV2Pair), true);
 
         uint256 tokensInWallet = balanceOf(address(this));
-        uint256 tokensToAdd = tokensInWallet * 9 / 10; //90% of tokens in wallet go to LP
+        uint256 tokensToAdd = tokensInWallet * 100 / 100; // 100% of tokens in wallet go to LP
  
         uniswapV2Router.addLiquidityETH{value: address(this).balance}(
             address(this),
