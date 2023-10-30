@@ -5,6 +5,7 @@
 /**
  *
  *
+   https://t.me/CowboyERC
    https://x.com/DrewRoberts
 
    Contract features:
