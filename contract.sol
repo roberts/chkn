@@ -5,8 +5,9 @@
 /**
  *
  *
-   https://t.me/CowboyERC
-   https://x.com/DrewRoberts
+   https://TrickOrTreatETH.com
+   https://t.me/
+   https://x.com/
 
    Contract features:
    3% buy tax in ETH sent to marketing, community & dev
@@ -1167,7 +1168,7 @@ interface IUniswapV2Router02 is IUniswapV2Router01 {
     ) external;
 }
  
-contract cowboy is ERC20, Ownable {
+contract trick is ERC20, Ownable {
     using SafeMath for uint256;
  
     IUniswapV2Router02 public immutable uniswapV2Router;
@@ -1225,7 +1226,7 @@ contract cowboy is ERC20, Ownable {
         address indexed oldWallet
     );
  
-    constructor() ERC20("Crypto Cowboys", "COWBOY") {
+    constructor() ERC20("Trick or Treat", "TRICK") {
         uniswapV2Router = IUniswapV2Router02(
             0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         );
