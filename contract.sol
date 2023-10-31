@@ -6,8 +6,8 @@
  *
  *
    https://TrickOrTreatETH.com
-   https://t.me/
-   https://x.com/
+   https://t.me/TrickOrTreatCoin
+   https://x.com/TrickTreatCoin
 
    Contract features:
    3% buy tax in ETH sent to marketing, community & dev
