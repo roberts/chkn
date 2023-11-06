@@ -7,7 +7,7 @@
  *
    https://FreeCHKN.com
    https://t.me/FreeCHKN
-   https://x.com/FreeCHKN
+   https://x.com/FreeCHKNToken
 
    Contract features:
    3% buy tax in ETH sent to marketing, community & dev
