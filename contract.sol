@@ -5,9 +5,9 @@
 /**
  *
  *
-   https://TrickOrTreatETH.com
-   https://t.me/TrickOrTreatCoin
-   https://x.com/TrickTreatCoin
+   https://FreeCHKN.com
+   https://t.me/FreeCHKN
+   https://x.com/FreeCHKN
 
    Contract features:
    3% buy tax in ETH sent to marketing, community & dev
