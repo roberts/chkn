@@ -6,7 +6,7 @@
  *
  *
    https://FreeCHKN.com
-   https://t.me/FreeCHKN
+   https://t.me/FreeCHKNPortal
    https://x.com/FreeCHKNToken
 
    Contract features:
